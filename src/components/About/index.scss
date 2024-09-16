@@ -1,0 +1,18 @@
+.text-zone {
+    font-family: 'Coolvetica';
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin: 5px 5px;
+}
+
+.about-img {
+    img {
+        position: absolute; 
+        width: 50%;
+        height: auto;
+        margin-left: calc(50% - 10px);
+        transform-origin: 100px 100px 0;
+        transform: translateY(50%);
+    }
+}

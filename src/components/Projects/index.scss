@@ -1,0 +1,10 @@
+.blog-container {
+    position: absolute;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    margin-left: calc(50% - 50px);
+    height: 100%;
+}
+
