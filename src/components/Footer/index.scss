@@ -1,0 +1,46 @@
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+
+    :first-child {
+        margin-left: 75px;
+    }
+
+    a {
+        font-size: 18px;
+        color: #b7a57a;
+        text-decoration: none;
+        margin-left: 10px;
+        padding-top: 45px;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    svg {
+        color: #b7a57a;
+        float: right;
+        font-size: 12px;
+        padding-right: 15px;
+        padding-top: 7px;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 0px;
+        float: right;
+        color: #b7a57a;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .page-footer{
+        :first-child {
+            margin-left: 25px;
+        }
+    }
+}
