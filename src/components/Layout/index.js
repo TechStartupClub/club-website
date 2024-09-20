@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar';
+import Footer from '../Footer';
 import './index.scss';
 
 const Layout = () => {
@@ -16,7 +17,8 @@ const Layout = () => {
             <br /> 
             <span className='bottom-tag-html'>&lt;/html&gt;</span>   
             </span>
-        </div>
+            <Footer />
+        </div> 
        </div>
     )
 }

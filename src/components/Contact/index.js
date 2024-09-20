@@ -1,6 +1,7 @@
 import './index.scss'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import uwLogo from '../../assets/logos/Signature_Stacked_White.png';
 
 const Contact = () => {
     const refForm = useRef()
@@ -21,7 +22,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className='container blog-page'>
+            <div className='container contact-page'>
                 <div className='text-zone'>
                     <h1>
                         Contact Us For More Info!
@@ -47,7 +48,10 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
-                </div>  
+                </div> 
+                <div className="about-img">
+                    <img src={uwLogo} alt="UW Logo Words" />
+                </div>
             </div>
         </>
     )

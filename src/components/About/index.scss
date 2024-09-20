@@ -1,18 +1,97 @@
-.text-zone {
-    font-family: 'Coolvetica';
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
-    margin: 5px 5px;
+.about-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        margin-left: 10px;
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            color: #b7a57a;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+            padding-left: 15px;
+
+            &::before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+    
+            &::after {
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-left: 20px;
+                opacity: 0.6;
+                bottom: -10px;
+            }
+        }
+
+        p {
+            font-size: 17px;
+            color: white;
+            padding-left: 15px;
+
+            &::before {
+                content: '<p>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -15px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+    
+            &::after {
+                content: '<p/>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-left: 20px;
+                opacity: 0.6;
+                bottom: -10px;
+            }
+        }
+    }
 }
 
 .about-img {
-    img {
-        position: absolute; 
-        width: 50%;
+    width: 50%;
+    height: 100%;
+    float: right;
+    .uL {
+        display: block;
+        max-height: 300px;
+        min-height: 200px;
+        width: 45%;
         height: auto;
-        margin-left: calc(50% - 10px);
-        transform-origin: 100px 100px 0;
-        transform: translateY(50%);
+        margin: auto;
+        padding: 10px 15px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about-page {
+        .text-zone {
+            left: 2.5%;
+        }
     }
 }

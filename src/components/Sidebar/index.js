@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
-import mainLogo from '../../assets/logos/main-logo.png';
+import mainLogo from '../../assets/logos/W-Logo_White.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faCalendar, faHammer, faHome, faInfo, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
@@ -32,7 +32,7 @@ const Sidebar = () => (
         </nav>
         <ul>
             <li>
-                <a target='_blank' rel='noreferrer' href=''>
+                <a target='_blank' rel='noreferrer' href='https://github.com/UWTechStartUpClub'>
                     <FontAwesomeIcon icon={faSquareGithub} color="#4d4d4e" />
                 </a>
             </li>

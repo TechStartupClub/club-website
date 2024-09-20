@@ -4,7 +4,7 @@ import mixedLanguages from '../../assets/logos/Mixed-languages.png';
 const About = () => {
 
     return (
-        <div className="conatiner blog-page">
+        <div className="conatiner about-page">
             <div className="text-zone">
                 <h1>
                     The Tech Start Up Club
@@ -16,8 +16,8 @@ const About = () => {
                     We also offer group study sessions, project/homework help, etc.
                 </p>
             </div>
-            <div className="container about-img">
-                <img src={mixedLanguages} alt="collage of programming languages" />
+            <div className="about-img">
+                <img className="uL" src={mixedLanguages} alt="collage of programming languages" />
             </div>
         </div>
     )

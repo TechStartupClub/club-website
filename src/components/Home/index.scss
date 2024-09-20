@@ -7,6 +7,7 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+        padding: 10px 10px;
     }
 
     h1 {
@@ -19,7 +20,7 @@
         &::before {
             content: '<h1>';
             font-family: 'La Belle Aurore';
-            color: #3a93dc;
+            color: #b7a57a;
             font-size: 18px;
             position: absolute;
             margin-top: -40px;
@@ -30,23 +31,18 @@
         &::after {
             content: '<h1/>';
             font-family: 'La Belle Aurore';
-            color:#3a93dc;
+            color: #b7a57a;
             font-size: 18px;
             position: absolute;
-            margin-top: 18px;
-            margin-left: 400px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
-        }
-
-        img {
-            width: 32px;
-
+            transform: translateY(-38px);
+            margin-left: calc(75%)
         }
     }
 
     h2 {
-        color: #8d8d8d;
+        color: #b7a57a;
         margin-top: 20px;
         font-weight: 400;
         font-size: 11px;
@@ -56,22 +52,46 @@
     }
 
     .flat-button {
-        color:#3a93dc;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #3a93dc;
+        border: 1px solid #b7a57a;
         margin-top: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
+        color: #b7a57a;
 
         &:hover {
-            background: #3a93dc;
-            color: #1260cc;
+            background: #b7a57a;
+            color: #4b2e83;
+        }
+    }
+}
+
+.about-img {
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    .UW-logo {
+        display: block;
+        max-height: 300px;
+        min-height: 200px;
+        width: 47%;
+        height: auto;
+        margin: auto;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .home-page {
+        .text-zone {
+            left: 2.5%;
         }
     }
 }

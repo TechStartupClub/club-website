@@ -1,5 +1,5 @@
 import './index.scss'
-import mainLogo from '../../assets/logos/main-logo.png';
+import mainLogo from '../../assets/logos/W-Logo_White.png';
 import Card from '../Card'
 
 const Projects = () => {
@@ -12,8 +12,8 @@ const Projects = () => {
                 </h1>
             </div>
             <div className="blog-container">
-                <Card  imgSrc={mainLogo} imgAlt='Event picture' title="Hw Help on 8/24" description="Homework Help at the UW Tacoma Library from 4pm-7pm. All porjects, assignments, and studying welcome!" btnText="Learn More" link="/"/>
-                <Card  imgSrc={mainLogo} imgAlt='Event picture' title="Last Quarter Project" description="Take a look at last quarter's project where 10 team members collaborated to create a full-stack application with real world solutions for their resume!" btnText="Learn More" link="/"/>
+                <Card  imgSrc={mainLogo} imgAlt='Event picture' title="First Club Project" description="Homework Help at the UW Tacoma Library from 4pm-7pm. All porjects, assignments, and studying welcome!" btnText="Learn More" link="https://discord.gg/dkWsu9a4"/>
+                <Card  imgSrc={mainLogo} imgAlt='Event picture' title="Our Website Code!" description="Homework Help at the UW Tacoma Library from 4pm-7pm. All porjects, assignments, and studying welcome!" btnText="Learn More" link="https://github.com/UWTechStartUpClub/Club-Website"/>
             </div>
         </div>
     )
