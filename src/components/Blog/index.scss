@@ -67,6 +67,17 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .blog-page {
+        .text-zone {
+            
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
     .blog-page {
         .text-zone {

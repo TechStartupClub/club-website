@@ -101,6 +101,20 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .about-page {
+        .text-zone {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
     .about-page {
         .text-zone {
