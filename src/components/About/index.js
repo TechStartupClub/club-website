@@ -16,7 +16,7 @@ const About = () => {
                     We also offer group study sessions, project/homework help, etc.
                 </p>
             </div>
-            <div className="about-img">
+            <div className="logo-img">
                 <img className="uL" src={mixedLanguages} alt="collage of programming languages" />
             </div>
         </div>

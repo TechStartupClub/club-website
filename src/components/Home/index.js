@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className="container home-page">
             <div className="text-zone">
-                <h1>Hi,<br /> We're
+                <h1>Hello,<br /> We're
                 The Tech Start Up Club
                 <br />
                 </h1>

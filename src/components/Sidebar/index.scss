@@ -217,3 +217,36 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .nav-bar{
+        width: 40px;
+
+        .logo {
+            img {
+                width: 28px;
+            }
+        }
+
+        nav {
+    
+            a.projects-link {
+                &:after {
+                    font-size: 5px;
+                }
+            }
+    
+            a.events-link {
+                &:after {
+                    font-size: 7px;
+                }
+            }
+    
+            a.contact-link {
+                &:after {
+                    font-size: 5px;
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ const Calendar = () => {
     }
 
     const goToToday = () => {
-        setFirstDayOfActiveMonth(firstDayOfActiveMonth(today.startOf("month")));
+        setFirstDayOfActiveMonth(today.startOf("month"));
     }
 
     const goToNextMonth = () => {

@@ -1,7 +1,10 @@
 .calendar-container {
+    position: absolute;
+    z-index: 99;
     width: 75%;
     height: 65%;
     margin: 8% 12.5%;
+    animation: fadeIn 1s 1.8s backwards;
 }
 
 
@@ -80,4 +83,23 @@
         }
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .calendar-container {
+        width: 80%;
+        margin: 25% 15%;
+    }
+
+    .calendar-grid {
+        grid-template-rows: 75px 75px 75px 75px 75px;
+
+        div {
+            font-size: 15px;
+
+            p {
+                font-size: 8px;
+            }
+        }
+    }
 }

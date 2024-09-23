@@ -1,13 +1,14 @@
 .blog-container {
     position: absolute;
     width: 45%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
     margin-left: calc(50% - 50px);
     height: 100%;
-    flex-direction: row;
-    align-items: center;
     padding: 10px 10px;
+    animation: fadeIn 1s 1.6s backwards;
+    align-items: center;
 }
 
 .blog-page {
@@ -17,9 +18,8 @@
         top: 50%;
         transform: translateY(-50%);
         width: 35%;
-        vertical-align: middle;
-        display: table-cell;
         max-height: 90%;
+        animation: fadeIn 1s 1.8s backwards;
 
         h1 {
             font-size: 40px;
@@ -63,6 +63,42 @@
     .blog-page {
         .text-zone {
             left: 2.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .blog-page {
+        .text-zone {
+            width: 100%;
+            top: 35%;
+            left: 10%;
+
+
+            &::before {
+                left: 10px;
+            }
+
+            &::after {
+                left: -10px;
+                line-height: 75px;
+            }
+        }
+
+        .blog-container {
+            position: static;
+            width: 80%;
+            height: auto;
+            transform: translateY(40%);
+            margin-left: 40px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .blog-container > * {
+            margin-bottom: 15px;
         }
     }
 }

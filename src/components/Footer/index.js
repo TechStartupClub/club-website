@@ -7,8 +7,8 @@ const Footer = () => {
 
     return (
         <div className='page-footer'>
-            <a href="https://github.com/UWTechStartUpClub" target='_blank' rel="noreferrer">GitHub</a>
-            <a href='' target='_blank'>DubNet</a>
+            <a href="https://github.com/UWTechStartUpClub" target='_blank' rel="noreferrer" className='git'>GitHub</a>
+            <a href='https://github.com/UWTechStartUpClub' target='_blank' rel="noreferrer">DubNet</a>
             <h1>UWTechStartUpClub 2024</h1>
             <FontAwesomeIcon icon={faCopyright} color="white" className='cpSymbol'></FontAwesomeIcon> 
         </div>

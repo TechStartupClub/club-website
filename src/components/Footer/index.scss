@@ -1,8 +1,11 @@
 .page-footer {
-    position: absolute;
+    position: fixed;
+    background-attachment: scroll;
     bottom: 0;
     width: 100%;
-    height: 35px;
+    height: 40px;
+    line-height: 40px;
+    animation: fadeIn 1s 1.8s backwards;
 
     :first-child {
         margin-left: 75px;
@@ -13,7 +16,6 @@
         color: #b7a57a;
         text-decoration: none;
         margin-left: 10px;
-        padding-top: 45px;
     }
 
     a:hover {
@@ -21,26 +23,58 @@
     }
 
     svg {
+        display: block;
         color: #b7a57a;
         float: right;
         font-size: 12px;
-        padding-right: 15px;
-        padding-top: 7px;
+        padding-right: 10px;
+        padding-top: 13px;
     }
 
     h1 {
         font-size: 18px;
-        line-height: 0px;
         float: right;
         color: #b7a57a;
         padding-right: 15px;
+        line-height: 15px;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .page-footer{
+    .page-footer {
         :first-child {
             margin-left: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page-footer {
+        height: 32px;
+        z-index: -1;
+
+        .git {
+            visibility: hidden;
+        }
+        :first-child {
+            margin-left: -5px;
+        }
+
+        a {
+            font-size: 15px;
+            visibility: hidden;
+        }
+
+        h1 {
+            font-size: 10px;
+            line-height: 27px;
+            padding-right: 5px;
+        }
+
+        svg {
+            font-size: 8px;
+            padding-top: 16px;
+            padding-right: 5px;
         }
     }
 }

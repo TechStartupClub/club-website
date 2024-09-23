@@ -1,7 +1,8 @@
+
 .contact-form {
     width: 100%;
     margin-top: 20px;
-
+    
     ul {
         padding: 0;
         margin: 0;
@@ -72,18 +73,18 @@
 }
 
 .about-img {
-    margin-left: 50px;
+    display: flex;
     width: 50%;
     height: 100%;
     float: right;
     text-align: center;
-    img {
-        position: absolute; 
-        width: 50%;
+    .UW-logo {
+        display: block;
+        max-height: 300px;
+        width: 47%;
         height: auto;
-        margin-left: calc(50% - 60px);
-        transform-origin: 100px 100px 0;
-        transform: translateY(50%);
+        margin: auto;
+        padding: 10px 10px;
     }
 }
 
@@ -136,6 +137,24 @@
     .contact-page {
         .text-zone {
             left: 2.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-page {
+        width: 100%;
+
+        .text-zone {
+            width: 80%;
+            margin: 0 5%;
+            top: 55%;
+        }
+    }    
+
+    .about-img {
+        .UW-logo {
+            visibility: hidden;
         }
     }
 }

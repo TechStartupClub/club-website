@@ -50,7 +50,7 @@ const Contact = () => {
                     </div>
                 </div> 
                 <div className="about-img">
-                    <img src={uwLogo} alt="UW Logo Words" />
+                    <img className="UW-logo"src={uwLogo} alt="UW Logo Words" />
                 </div>
             </div>
         </>

@@ -73,10 +73,12 @@
 }
 
 .about-img {
+    display: flex;
     width: 50%;
     height: 100%;
     float: right;
     text-align: center;
+    
     .UW-logo {
         display: block;
         max-height: 300px;
@@ -92,6 +94,51 @@
     .home-page {
         .text-zone {
             left: 2.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-page {
+        .text-zone {
+            width: 85%;
+            text-align: center;
+
+            h1 {
+                font-size: 40px;
+
+                &::before {
+                    content: '<h1>';
+                    font-family: 'La Belle Aurore';
+                    color: #b7a57a;
+                    font-size: 18px;
+                    position: absolute;
+                    margin-top: 0px;
+                    left: 15px;
+                    opacity: 0.6;
+                }
+
+                &::after {
+                    transform: translateY(-30px);
+                    margin-left: calc(85%)
+                }
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-bottom: 35px;
+            }
+
+            .flat-button {
+                float: none;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .about-img {
+        .UW-logo {
+            visibility: hidden;
         }
     }
 }
