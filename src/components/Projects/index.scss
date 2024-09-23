@@ -96,5 +96,9 @@
             flex-wrap: wrap;
             flex-direction: row;
         }
+
+        .project-container > * {
+            margin-bottom: 15px;
+        }
     }
 }
