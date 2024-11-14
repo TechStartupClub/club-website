@@ -55,7 +55,7 @@ const Calendar = () => {
                             </div>
                         );
                     }
-                    else if (days.hasSame(today, "day") && ((days.weekday === 1) || (days.weekday === 3))) {
+                    else if (days.hasSame(today, "day") && ((days.weekday === 2) || (days.weekday === 4))) {
                         return (
                             <div style={{backgroundColor: '#b7a57a'}} key={daysIndex}>
                                 {days.day}
@@ -65,7 +65,7 @@ const Calendar = () => {
                             </div>
                         );
                     }  
-                    else if ((days.weekday === 1) || (days.weekday === 3)) {
+                    else if ((days.weekday === 2) || (days.weekday === 4)) {
 
                         return (
                             <div style={{backgroundColor: '#b7a57a'}} key={daysIndex}>
