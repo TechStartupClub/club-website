@@ -1,5 +1,4 @@
 import Calendar from '../Calendar'
-import './index.scss'
 
 const Events = () => {
 

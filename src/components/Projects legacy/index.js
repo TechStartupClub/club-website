@@ -1,4 +1,3 @@
-import './index.scss'
 import mainLogo from '../../assets/logos/W-Logo_White.png';
 import Card from '../Card'
 

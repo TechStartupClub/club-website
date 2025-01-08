@@ -1,0 +1,160 @@
+
+.contact-form {
+    width: 100%;
+    margin-top: 20px;
+    
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type='text'],
+    input[type='email'] {
+        width: 100%;
+        border: 0;
+        font-size: 16px;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    textarea {
+        width: 100%;
+        border: 0;
+        height: 50px;
+        font-size: 16px;
+        padding: 20px;
+        min-height: 150px;
+        box-sizing: border-box;
+    }
+
+    .flat-button {
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #b7a57a;
+        float: right;
+        border-radius: 4px;
+        background-color: #4b2e83;
+        color: #b7a57a;
+    }
+
+    .flat-button:hover {
+        color: white;
+        background-color: #b7a57a;
+        cursor: pointer;
+    }
+}
+
+.about-img {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    .UW-logo {
+        display: block;
+        max-height: 300px;
+        width: 47%;
+        height: auto;
+        margin: auto;
+        padding: 10px 10px;
+    }
+}
+
+.contact-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            color: white;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+
+            &::before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px;
+                left: -10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+    
+            &::after {
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                font-size: 18px;
+                position: absolute;
+                margin-left: 20px;
+                opacity: 0.6;
+                bottom: -10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact-page {
+        .text-zone {
+            left: 2.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-page {
+        width: 100%;
+
+        .text-zone {
+            width: 80%;
+            margin: 0 5%;
+            top: 55%;
+        }
+    }    
+
+    .about-img {
+        .UW-logo {
+            visibility: hidden;
+        }
+    }
+}
