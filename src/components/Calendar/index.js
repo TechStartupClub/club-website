@@ -55,22 +55,30 @@ const Calendar = () => {
                             </div>
                         );
                     }
-                    else if (days.hasSame(today, "day") && ((days.weekday === 2) || (days.weekday === 4))) {
+                    else if (days.hasSame(today, "day") && ((days.weekday === 1) || (days.weekday === 4))) {
                         return (
                             <div style={{backgroundColor: '#b7a57a'}} key={daysIndex}>
                                 {days.day}
-                                <p>Current
-                                   Weekly Meetings Lunch Period 
+                                <p>
+                                    {days.weekday === 1 ? 'TPS 201 12:30-1:30' : 'DOU 260 12:30-1:30'}
                                 </p>
+                                <p>
+                                    In-person and virtually
+                                </p>   
                             </div>
                         );
                     }  
-                    else if ((days.weekday === 2) || (days.weekday === 4)) {
+                    else if ((days.weekday === 1) || (days.weekday === 4)) {
 
                         return (
                             <div style={{backgroundColor: '#b7a57a'}} key={daysIndex}>
                                 {days.day}
-                                <p>Weekly Meetings Lunch Period</p>
+                                <p>
+                                    {days.weekday === 1 ? 'TPS 201 12:30-1:30' : 'DOU 260 12:30-1:30'}
+                                </p>
+                                <p>
+                                    In-person and virtually
+                                </p>                        
                             </div>  
                         )
                     }                  

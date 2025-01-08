@@ -1,54 +1,29 @@
 .home-page {
-
     .text-zone {
         position: absolute;
-        left: 10%;
+        left: 50%;
         top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
-        padding: 10px 10px;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
     }
 
     h1 {
         color: white;
-        font-size: 53px;
+        font-size: 9vw; // Base size that scales with viewport width
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
-
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #b7a57a;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            content: '<h1/>';
-            font-family: 'La Belle Aurore';
-            color: #b7a57a;
-            font-size: 18px;
-            position: absolute;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-            transform: translateY(-38px);
-            margin-left: calc(75%)
-        }
+        white-space: nowrap; // Prevents text from wrapping
     }
 
     h2 {
-        color: #b7a57a;
-        margin-top: 20px;
+        color: white;
+        font-size: 2.25vw; // Base size that scales with viewport width
+        margin: 0;
+        font-family: 'Coolvetica';
         font-weight: 400;
-        font-size: 11px;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap; // Prevents text from wrapping
     }
 
     .flat-button {
@@ -60,7 +35,7 @@
         padding: 10px 18px;
         border: 1px solid #b7a57a;
         margin-top: 25px;
-        float: left;
+        display: inline-block;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
         color: #b7a57a;
@@ -72,73 +47,37 @@
     }
 }
 
-.about-img {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    float: right;
-    text-align: center;
-    
-    .UW-logo {
-        display: block;
-        max-height: 300px;
-        min-height: 200px;
-        width: 47%;
-        height: auto;
-        margin: auto;
-        padding: 10px 10px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .home-page {
-        .text-zone {
-            left: 2.5%;
-        }
-    }
-}
-
+// For very small screens
 @media screen and (max-width: 500px) {
     .home-page {
         .text-zone {
-            width: 85%;
-            text-align: center;
+            width: 95%;
+        }
 
-            h1 {
-                font-size: 40px;
+        h1 {
+            font-size: 11vw;
+        }
 
-                &::before {
-                    content: '<h1>';
-                    font-family: 'La Belle Aurore';
-                    color: #b7a57a;
-                    font-size: 18px;
-                    position: absolute;
-                    margin-top: 0px;
-                    left: 15px;
-                    opacity: 0.6;
-                }
-
-                &::after {
-                    transform: translateY(-30px);
-                    margin-left: calc(85%)
-                }
-            }
-
-            h2 {
-                font-size: 18px;
-                margin-bottom: 35px;
-            }
-
-            .flat-button {
-                float: none;
-                font-size: 17px;
-            }
+        .flat-button {
+            font-size: 17px;
         }
     }
+}
 
-    .about-img {
-        .UW-logo {
-            visibility: hidden;
+// For very large screens
+@media screen and (min-width: 1400px) {
+    .home-page {
+        h1 {
+            font-size: 130px; // Max size cap
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
