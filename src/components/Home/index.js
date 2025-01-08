@@ -7,7 +7,7 @@ const Home = () => {
             <div className="text-zone">
                 <h1>TECH STARTUP CLUB</h1>
                 <h2>Full-Stack development at the University of Washington</h2>                
-                <Link to="/contact" className='flat-button'>CONTACT US</Link>
+                <Link to="/contact" className='flat-button'>Join us</Link>
             </div>
         </div>
     )

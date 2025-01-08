@@ -9,8 +9,8 @@ const Footer = () => {
         <div className='page-footer'>
             <a href="https://github.com/UWTechStartUpClub" target='_blank' rel="noreferrer" className='git'>GitHub</a>
             <a href='https://github.com/UWTechStartUpClub' target='_blank' rel="noreferrer">DubNet</a>
-            <h1>UWTechStartUpClub 2024</h1>
-            <FontAwesomeIcon icon={faCopyright} color="white" className='cpSymbol'></FontAwesomeIcon> 
+            <h1>Tech Startup Club 2024</h1>
+            <FontAwesomeIcon icon={faCopyright} color="black" className='cpSymbol'></FontAwesomeIcon> 
         </div>
     )
 }

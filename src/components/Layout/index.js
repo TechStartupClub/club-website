@@ -5,18 +5,15 @@ import './index.scss';
 
 const Layout = () => {
     return (
-       <div className="App">
-        <Sidebar />
-        <div className='page'>
-
-            <Outlet />
-
-            <span className='tags bottom-tags'>
-            <br /> 
-            </span>
+        <>
+            <Sidebar />
+            <div className='page'>
+                <div className="container">
+                    <Outlet />
+                </div>
+            </div> 
             <Footer />
-        </div> 
-       </div>
+        </>
     )
 }
 

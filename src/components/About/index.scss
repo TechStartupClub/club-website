@@ -1,153 +1,76 @@
-.about-page {
-    .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
-        margin-left: 10px;
-        animation: fadeIn 1s 1.8s backwards;
+// .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 20px;
+// }
 
-        h1 {
-            font-size: 40px;
-            font-family: 'Coolvetica';
-            font-weight: 400;
-            color: #b7a57a;
-            margin-top: 0;
-            position: relative;
-            margin-bottom: 40px;
-            left: 10px;
-            padding-left: 15px;
+// .aboutSection {
+//     text-align: center;
+//     padding: 40px;
+//     background-color: #f9f9f9;
+//     border-radius: 8px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// }
 
-            &::before {
-                content: '<h1>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                position: absolute;
-                margin-top: -10px;
-                left: -10px;
-                opacity: 0.6;
-                line-height: 18px;
-            }
-    
-            &::after {
-                content: '<h1/>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                position: absolute;
-                margin-left: 20px;
-                opacity: 0.6;
-                bottom: -10px;
-            }
-        }
+// .aboutSection h1 {
+//     font-size: 2.5rem;
+//     margin-bottom: 20px;
+//     color: #333;
+// }
 
-        p {
-            font-size: 17px;
-            color: white;
-            padding-left: 15px;
+// .aboutSection p {
+//     font-size: 1.2rem;
+//     line-height: 1.6;
+//     color: #555;
+// }
+// /*Team Section*/
+// .teamSection {
+//     text-align: center;
+//     margin: 40px 0;
+// }
 
-            &::before {
-                content: '<p>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                position: absolute;
-                margin-top: -10px;
-                left: -15px;
-                opacity: 0.6;
-                line-height: 18px;
-            }
-    
-            &::after {
-                content: '<p/>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                position: absolute;
-                margin-left: 20px;
-                opacity: 0.6;
-                bottom: -10px;
-            }
-        }
-    }
-}
+// .teamSection h1 {
+//     font-size: 2.5rem;
+//     margin-bottom: 30px;
+//     color: #333;
+// }
 
-.logo-img {
-    display: flex;
-    width: 50%;
-    height: 650px;
-    float: right;
-    align-items: center;
-    animation: fadeIn 1s 1.8s backwards;
+// .teamGrid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     gap: 20px;
+//     padding: 0 20px;
+// }
 
-    .uL {
-        display: block;
-        max-height: 300px;
-        min-height: 200px;
-        width: 85%;
-        height: auto;
-        margin: auto;
-        padding: 10px 15px;
-        border-radius: 50px;
-    }
-}
+// .teamCard {
+//     background-color: #fff;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     padding: 20px;
+//     text-align: center;
+//     transition: transform 0.3s ease;
+// }
+// /*how high the card hovers*/
+// .teamCard:hover {
+//     transform: translateY(-10px);
+// }
 
-@media screen and (min-width: 1000px) {
-    .about-page {
-        .text-zone {
-            left: 2.5%;
-        }
-    }
-}
+// .profileImage {
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     margin-bottom: 15px;
+// }
 
-@media screen and (max-width: 900px) {
-    .about-page {
-        .text-zone {
-            h1 {
-                font-size: 30px;
-            }
+// .teamCard h2 {
+//     font-size: 1.5rem;
+//     margin-bottom: 10px;
+//     color: #333;
+// }
 
-            p {
-                font-size: 13px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .about-page {
-        .text-zone {
-            width: 85%;
-            text-align: center;
-    
-            h1 {
-                font-size: 35px;
-                padding-left: 0;
-                left: 0;
-                margin-bottom: 20px;
-
-                &::before {
-                    left: 0px;
-                }
-
-                &::after {
-                    margin-left: 10px;
-                }
-            }
-
-            p {
-                font-size: 15px;
-                padding: 10px 10px;
-
-                &::before {
-                    left: 0;
-                }
-            }
-        }    
-
-        .uL {
-            visibility: hidden;
-        }
-    }
-}
+// .teamCard p {
+//     font-size: 1rem;
+//     line-height: 1.6;
+//     color: #555;
+// }

@@ -6,6 +6,7 @@
     height: 40px;
     line-height: 40px;
     animation: fadeIn 1s 1.8s backwards;
+    border-top: 1px solid grey;
 
     :first-child {
         margin-left: 75px;
@@ -13,18 +14,18 @@
 
     a {
         font-size: 18px;
-        color: #b7a57a;
+        color: black;
         text-decoration: none;
         margin-left: 10px;
     }
 
     a:hover {
-        color: white;
+        color: #b7a57a;
     }
 
     svg {
         display: block;
-        color: #b7a57a;
+        color: black;
         float: right;
         font-size: 12px;
         padding-right: 10px;
@@ -34,7 +35,7 @@
     h1 {
         font-size: 18px;
         float: right;
-        color: #b7a57a;
+        color: black;
         padding-right: 15px;
         line-height: 15px;
     }
