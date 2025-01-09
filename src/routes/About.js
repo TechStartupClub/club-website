@@ -107,26 +107,6 @@ const teamMembers = [
         }
     },
     { 
-        name: 'Austin Nguyen', 
-        img: Orange, 
-        description: 'Front-end Developer',
-        socials: {
-            email: '',
-            linkedin: '',
-            github: ''
-        }
-    },
-    { 
-        name: 'Luke Willis', 
-        img: Orange, 
-        description: 'Front-end Developer',
-        socials: {
-            email: 'lwillis@uw.edu',
-            linkedin: 'https://www.linkedin.com/in/luke-willis-b26b00282/',
-            github: 'https://github.com/luke-willis'
-        }
-    },
-    { 
         name: 'Nikita Bizyuk', 
         img: Orange, 
         description: 'Back-end Developer',
@@ -144,6 +124,26 @@ const teamMembers = [
             email: '',
             linkedin: '',
             github: 'https://github.com/Linda-Miao'
+        }
+    },
+    { 
+        name: 'Austin Nguyen', 
+        img: Orange, 
+        description: 'Front-end Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: ''
+        }
+    },
+    { 
+        name: 'Luke Willis', 
+        img: Orange, 
+        description: 'Front-end Developer',
+        socials: {
+            email: 'lwillis@uw.edu',
+            linkedin: 'https://www.linkedin.com/in/luke-willis-b26b00282/',
+            github: 'https://github.com/luke-willis'
         }
     }
 ];

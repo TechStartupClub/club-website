@@ -8,6 +8,8 @@ import Projects from './routes/projects.js';
 import Events from './routes/Events.js'
 import About from './routes/About.js';
 import Contact from './routes/Contact.js'
+import UMarket from './routes/UMarket.js'
+import UWealth from './routes/UWealth.js'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Route path="/about" element={<About />} /> 
       <Route path="/blog" element={<Blog />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/projects/UWealth" element={<UWealth />} />
+      <Route path="/projects/UMarket" element={<UMarket />} />
       <Route path="/events" element={<Events />} />
       <Route path="/contact" element={<Contact />} />
    </Routes>
