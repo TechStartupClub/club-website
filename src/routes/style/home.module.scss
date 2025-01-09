@@ -1,8 +1,22 @@
+.layoutWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
 }
+
+// .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 20px;
+// }
 
 .homeSection {
     text-align: center;
@@ -10,13 +24,12 @@
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
-    // Center the content vertically in viewport
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
     width: 90%;
+    overflow: visible;
 
     h1 {
         color: black;
@@ -26,6 +39,8 @@
         font-family: 'Verdana';
         font-weight: 400;
         white-space: nowrap;
+        position: relative;
+        z-index: 2;
     }
 
     h2 {
@@ -35,7 +50,111 @@
         font-family: 'Verdana';
         font-weight: 400;
         white-space: nowrap;
+        position: relative;
+        z-index: 2;
     }
+}
+
+// Top Right Corner Cluster
+.topRightOrange1 {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 140px;
+    height: 140px;
+    opacity: 0.9;
+    transform: rotate(45deg);
+}
+
+.topRightOrange2 {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    width: 90px;
+    height: 90px;
+    opacity: 0.85;
+    transform: rotate(-15deg);
+}
+
+.topRightOrange3 {
+    position: absolute;
+    top: 0px;
+    right: 110px;
+    width: 75px;
+    height: 75px;
+    opacity: 0.8;
+    transform: rotate(30deg);
+}
+
+.topRightOrange4 {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    opacity: 0.85;
+    transform: rotate(-25deg);
+}
+
+.topRightOrange5 {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    width: 65px;
+    height: 65px;
+    opacity: 0.75;
+    transform: rotate(60deg);
+}
+
+// Bottom Left Corner Cluster
+.bottomLeftOrange1 {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 140px;
+    height: 140px;
+    opacity: 0.9;
+    transform: rotate(-45deg);
+}
+
+.bottomLeftOrange2 {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    width: 90px;
+    height: 90px;
+    opacity: 0.85;
+    transform: rotate(15deg);
+}
+
+.bottomLeftOrange3 {
+    position: absolute;
+    bottom: 0px;
+    left: 110px;
+    width: 75px;
+    height: 75px;
+    opacity: 0.8;
+    transform: rotate(-30deg);
+}
+
+.bottomLeftOrange4 {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    opacity: 0.85;
+    transform: rotate(25deg);
+}
+
+.bottomLeftOrange5 {
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    width: 65px;
+    height: 65px;
+    opacity: 0.75;
+    transform: rotate(-60deg);
 }
 
 .flatButton {
@@ -51,6 +170,8 @@
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
     color: orange;
+    position: relative;
+    z-index: 2;
 
     &:hover {
         background: #32006e;
@@ -58,7 +179,6 @@
     }
 }
 
-// For very small screens
 @media screen and (max-width: 500px) {
     .homeSection {
         width: 95%;
@@ -73,7 +193,6 @@
     }
 }
 
-// For very large screens
 @media screen and (min-width: 1400px) {
     .homeSection {
         h1 {

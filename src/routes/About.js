@@ -2,6 +2,8 @@ import React from 'react';
 import style from './style/about.module.scss';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 import celestin from '../assets/images/Profile-Photos/celestin.jpeg';
 import jacobKlymenko from '../assets/images/Profile-Photos/jacobKylmenko.jpeg';
@@ -11,22 +13,197 @@ import prestonSia from '../assets/images/Profile-Photos/prestonSia.jpeg';
 import fernandoOlivarNeri from '../assets/images/Profile-Photos/fernandoOlivarNeri.jpeg';
 import alexYu from '../assets/images/Profile-Photos/alexYu.jpg';
 import johnDiego from '../assets/images/Profile-Photos/johnDiego.jpeg';
+import Orange from '../assets/images/Orange Pin.png';
 
 const teamMembers = [
-    { name: 'Celestin Ryf', img: celestin, description: 'As President of the Tech Startup Club I lead full-stack projects, facilitate meetings, and manage team collaboration between front-end, back-end, and design groups.' },
-    { name: 'Jacob Klymenko', img: jacobKlymenko, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...' },
-    { name: 'Nick Jordan', img: nickJordan, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...' },
-    { name: 'Primo Bambao', img: primoBambao, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...' },
-    { name: 'Preston Sia', img: prestonSia, description: 'Hi there! I am an undergraduate student at the University of Washington Tacoma studying computer science. Programming is a passion of mine, one that started with the coding of a few simple web pages, and grew into the drive that brought me to this field and this project. I believe in the power of technology to make change in our communities for the better.' },
-    { name: 'Fernando Olivar Neri', img: fernandoOlivarNeri, description: 'Computer Science student at the University of Washington Tacoma skilled in Java, Python, JavaScript, and C. Passionate about software development and cybersecurity, I’m eager to contribute to impactful projects and grow in the tech industry.' },
-    { name: 'Alex Yu', img: alexYu, description: 'You are my sunshine, my only sunshine...' },
-    { name: 'John Diego', img: johnDiego, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...' },
-    
+    { 
+        name: 'Celestin Ryf', 
+        img: celestin, 
+        description: 'President',
+        socials: {
+            email: 'celestinryf@gmail.com',
+            linkedin: 'https://linkedin.com/in/celestin-ryf',
+            github: 'https://github.com/celestinryf'
+        }
+    },
+    { 
+        name: 'Nick Jordan', 
+        img: nickJordan, 
+        description: 'Full-stack Lead',
+        socials: {
+            email: 'njordan1@uw.edu',
+            linkedin: 'http://linkedin.com/in/nicholas-jordan-a979a32a9',
+            github: 'https://github.com/NickJordan-BE'
+        }
+    },
+    { 
+        name: 'Jacob Klymenko', 
+        img: jacobKlymenko, 
+        description: 'Back-end Lead',
+        socials: {
+            email: 'jacobkly@uw.edu',
+            linkedin: 'https://www.linkedin.com/in/jacob-kly/',
+            github: 'https://github.com/jacobkly'
+        }
+    },
+    { 
+        name: 'Preston Sia', 
+        img: prestonSia, 
+        description: 'Front-end Lead',
+        socials: {
+            email: 'psia97@uw.edu',
+            linkedin: 'https://www.linkedin.com/in/preston-sia-10a542304',
+            github: 'https://github.com/presia27/'
+        }
+    },
+    { 
+        name: 'Primitivo Bambao', 
+        img: primoBambao, 
+        description: 'Design Lead',
+        socials: {
+            email: 'lumikhaiv@gmail.com',
+            linkedin: 'https://www.linkedin.com/in/primitivo-bambao/',
+            github: 'https://github.com/abstrcted'
+        }
+    },
+    { 
+        name: 'Anthony Nadyuk', 
+        img: Orange, 
+        description: 'Mobile Lead',
+        socials: {
+            email: '',
+            linkedin: 'https://www.linkedin.com/in/anthony-n-0625702a5/',
+            github: 'https://github.com/antnay'
+        }
+    },
+    { 
+        name: 'Fernando Olivar Neri', 
+        img: fernandoOlivarNeri, 
+        description: 'Front-end Developer',
+        socials: {
+            email: '',
+            linkedin: 'https://www.linkedin.com/in/foneri/',
+            github: 'https://github.com/Feekly'
+        }
+    },
+    { 
+        name: 'John Diego', 
+        img: johnDiego, 
+        description: 'Front-end Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: 'https://github.com/diego-menudo'
+        }
+    },
+    { 
+        name: 'Alex Yu', 
+        img: alexYu, 
+        description: 'Front-end Developer',
+        socials: {
+            email: '',
+            linkedin: 'https://www.linkedin.com/in/alex-yu-2a419127b/',
+            github: 'https://github.com/AlexY305'
+        }
+    },
+    { 
+        name: 'Austin Nguyen', 
+        img: Orange, 
+        description: 'Front-end Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: ''
+        }
+    },
+    { 
+        name: 'Luke Willis', 
+        img: Orange, 
+        description: 'Front-end Developer',
+        socials: {
+            email: 'lwillis@uw.edu',
+            linkedin: 'https://www.linkedin.com/in/luke-willis-b26b00282/',
+            github: 'https://github.com/luke-willis'
+        }
+    },
+    { 
+        name: 'Nikita Bizyuk', 
+        img: Orange, 
+        description: 'Back-end Developer',
+        socials: {
+            email: '',
+            linkedin: 'https://www.linkedin.com/in/nikita-bizyuk-7a32072b7/',
+            github: 'https://github.com/NikitaBizyuk'
+        }
+    },
+    { 
+        name: 'Linda', 
+        img: Orange, 
+        description: 'Back-end-end Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: 'https://github.com/Linda-Miao'
+        }
+    }
 ];
+
+const SocialLinks = ({ socials }) => {
+    return (
+        <div className={style.socialLinks}>
+            {socials.email && (
+                <a 
+                    href={`mailto:${socials.email}`} 
+                    aria-label="Email"
+                    className={style.socialIcon}
+                >
+                    <MdEmail />
+                </a>
+            )}
+            {socials.linkedin && (
+                <a 
+                    href={socials.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    aria-label="LinkedIn"
+                    className={style.socialIcon}
+                >
+                    <FaLinkedin />
+                </a>
+            )}
+            {socials.github && (
+                <a 
+                    href={socials.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    aria-label="GitHub"
+                    className={style.socialIcon}
+                >
+                    <FaGithub />
+                </a>
+            )}
+        </div>
+    );
+};
+
+const TeamCard = ({ member }) => {
+    return (
+        <div className={style.teamCard}>
+            <img
+                src={member.img} 
+                alt={`Profile of ${member.name}`}
+                className={style.profileImage}
+            />
+            <h2>{member.name}</h2>
+            <p>{member.description}</p>
+            {member.socials && <SocialLinks socials={member.socials} />}
+        </div>
+    );
+};
 
 const About = () => {
     return (
-        <>
+        <div className={style.layoutWrapper}>
             <NavBar />
             <div className={style.container}>
                 <div className={style.aboutSection}>
@@ -38,28 +215,20 @@ const About = () => {
                         and accessible platform that meets the needs of modern investors. At UWT, we are proud to foster innovation and collaboration, turning ideas into tools 
                         that make a difference.
                     </p>
-                 </div>
+                </div>
 
-                 <section className={style.teamSection}>
+                <section className={style.teamSection}>
                     <h1>Our Team</h1>
                     <div className={style.teamGrid}>
                         {teamMembers.map((member, index) => (
-                            <div key={index} className={style.teamCard}>
-                                <img
-                                src={member.img} 
-                                alt={`Profile of ${member.name}`}
-                                className={style.profileImage}
-                                />
-                                <h2>{member.name}</h2>
-                                <p>{member.description}</p>
-                            </div>
+                            <TeamCard key={index} member={member} />
                         ))}
                     </div>
-                 </section>
+                </section>
             </div>
             <Footer />
-        </>
-    )
-}
+        </div>
+    );
+};
 
-export default About
+export default About;
