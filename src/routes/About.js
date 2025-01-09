@@ -212,7 +212,7 @@ const About = () => {
                         We are a group of students at the University of Washington Tacoma, passionate about combining techonology and finance to create impactful solutions. 
                         Our current project is developing a stock tracker app designed to empower users with real time market insights, personalized portfolio tracking, 
                         and educational resources for smarter investing. With diverse backgrounds in coding, finance, and user experience design, we aim to create an intuitive 
-                        and accessible platform that meets the needs of modern investors. At UWT, we are proud to foster innovation and collaboration, turning ideas into tools 
+                        and accessible platform that meets the needs of modern investors. At UW, we are proud to foster innovation and collaboration, turning ideas into tools 
                         that make a difference.
                     </p>
                 </div>

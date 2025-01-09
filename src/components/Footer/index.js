@@ -1,18 +1,38 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
-import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faCopyright, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import './index.scss';
 
 const Footer = () => {
-     
-
     return (
-        <div className='page-footer'>
-            <a href="https://github.com/UWTechStartUpClub" target='_blank' rel="noreferrer" className='git'>GitHub</a>
-            <a href='https://github.com/UWTechStartUpClub' target='_blank' rel="noreferrer">DubNet</a>
-            <h1>Tech Startup Club 2024</h1>
-            <FontAwesomeIcon icon={faCopyright} color="black" className='cpSymbol'></FontAwesomeIcon> 
+        <div className="page-footer">
+            <div className="socialSection">
+                <span className="socialText">Follow us on</span>
+                <div className="socialLinks">
+                    <a href="https://github.com/TechStartupClub" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a href="https://www.linkedin.com/company/techstartupclub/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                    <a href="https://www.instagram.com/techstartupuw/?hl=en" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href="https://discord.gg/SPJnwq5hPk" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faDiscord} />
+                    </a>
+                    <a href="https://uwtechstartupclub.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGlobe} />
+                    </a>
+                </div>
+            </div>
+            <div className="right-section">
+                <FontAwesomeIcon icon={faCopyright} className="cpSymbol" />
+                <h1>Tech Startup Club 2024</h1>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

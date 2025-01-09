@@ -1,66 +1,62 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import style from './style/contact.module.scss';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
-
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-import uwLogo from '../assets/logos/Signature_Stacked_White.png';
+import emailjs from '@emailjs/browser';
+import mainLogo from '../assets/logos/Tech Startup Club Logo.png';
 
 const Contact = () => {
-    const refForm = useRef()
+    const refForm = useRef();
 
-    const sendEmail= (e) => {
-        e.preventDefault()
-
-        emailjs.sendForm('service_ed0db6u', 'template_in0zoc9', refForm.current, 'HTL8crLZotnXzJw5h').then(
-            () => {
-                alert('Message Successfully Sent!')
-                window.location.reload(false)
-            },
-            () => {
-                alert("Failed to Send Message")
-            }
-        )
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_ed0db6u', 'template_in0zoc9', refForm.current, 'HTL8crLZotnXzJw5h')
+            .then(
+                () => {
+                    alert('Message Successfully Sent!');
+                    window.location.reload(false);
+                },
+                () => {
+                    alert("Failed to Send Message");
+                }
+            );
+    };
 
     return (
         <>
             <NavBar />
-            <div className='container contact-page'>
-                <div className='text-zone'>
-                    <h1>
-                        Contact Us For More Info!
-                    </h1>
-                    <div className='contact-form'>
-                        <form ref={refForm} onSubmit={sendEmail}> 
+            <div className={style['contact-page']}>
+                <div className={style['text-zone']}>
+                    <h1>Contact Us For More Info!</h1>
+                    <div className={style['contact-form']}>
+                        <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
-                                <li className='half'> 
-                                    <input type='text' name='name' placeholder='Name' required></input>
+                                <li className={style.half}>
+                                    <input type='text' name='name' placeholder='Name' required />
                                 </li>
-                                <li className='half'>
-                                    <input type='email' name='email' placeholder='Email' required></input>
-                                </li>
-                                <li>
-                                    <input type='text' name='subject' placeholder='Subject' required></input>
+                                <li className={style.half}>
+                                    <input type='email' name='email' placeholder='Email' required />
                                 </li>
                                 <li>
-                                    <textarea placeholder="Message" name="message" required></textarea>
+                                    <input type='text' name='subject' placeholder='Subject' required />
                                 </li>
                                 <li>
-                                    <input type="submit" className='flat-button' value="SEND"></input>
+                                    <textarea placeholder="Message" name="message" required />
+                                </li>
+                                <li>
+                                    <input type="submit" className={style['flat-button']} value="SEND" />
                                 </li>
                             </ul>
                         </form>
                     </div>
-                </div> 
-                <div className="about-img">
-                    <img className="UW-logo"src={uwLogo} alt="UW Logo Words" />
+                </div>
+                <div className={style['about-img']}>
+                    <img className={style['mainLogo']} src={mainLogo} alt="Tech Startup Club Logo" />
                 </div>
             </div>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;

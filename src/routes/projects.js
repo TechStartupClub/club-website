@@ -6,26 +6,29 @@ import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import mainLogo from '../assets/logos/W-Logo_White.png';
+import ClubWebsite from '../assets/images/ClubWebsite/Screenshot 2025-01-09 at 8.35.34 AM.png';
+import UMarket from '../assets/images/UMarket/UMarket.PNG';
+import UWealth from '../assets/images/UWealth/images/Front page.png';
 
 const projects = [
     {
-        name: 'UMarket',
-        image: mainLogo,
-        description: 'A marketplace for university students to buy and sell ',
+        name: 'UMarket 2025',
+        image: UMarket,
+        description: 'A marketplace for university students to buy and sell. Built with React, TypeScript Front-end. Node.js, Express Back-end. Python with Pandas and PyTorch for Machine Learning, AWS for cloud, and PostgreSQL for database.',
         github: 'https://github.com/TechStartupClub/UMarket',
         route: '/projects/UMarket'
     },
     {
-        name: 'UWealth',
-        image: mainLogo,
-        description: 'Stock tracking application with user managment, market data, portfolio management, and analyst recommendations.',
+        name: 'UWealth 2024',
+        image: UWealth,
+        description: 'Stock tracking application with user managment, market data, portfolio management, and analyst recommendations. Data from Alpha Vantage presented by React, JavaScript Front-end. Restful API handled by Express, Node.js Back-end server. User database handled by PostgreSQL.',
         github: 'https://github.com/TechStartupClub/UWealth',
         route: '/projects/UWealth'
     },
     {
-        name: 'Club Website',
-        image: mainLogo,
-        description: 'The official Tech Startup Club website built with React and modern web technologies.',
+        name: 'Club Website 2024',
+        image: ClubWebsite,
+        description: 'The official Tech Startup Club website built with React, JavaScript, HTML, CSS.',
         github: 'https://github.com/TechStartupClub/club-website',
         route: '/'
     }

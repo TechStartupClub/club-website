@@ -7,75 +7,78 @@
     line-height: 40px;
     animation: fadeIn 1s 1.8s backwards;
     border-top: 1px solid grey;
-
-    :first-child {
-        margin-left: 75px;
-    }
-
-    a {
-        font-size: 18px;
-        color: black;
-        text-decoration: none;
-        margin-left: 10px;
-    }
-
-    a:hover {
-        color: #b7a57a;
-    }
-
-    svg {
-        display: block;
-        color: black;
-        float: right;
-        font-size: 12px;
-        padding-right: 10px;
-        padding-top: 13px;
-    }
-
-    h1 {
-        font-size: 18px;
-        float: right;
-        color: black;
-        padding-right: 15px;
-        line-height: 15px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-@media screen and (min-width: 1000px) {
-    .page-footer {
-        :first-child {
-            margin-left: 25px;
-        }
-    }
+.page-footer .socialSection {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.page-footer .socialText {
+    color: black;
+    font-size: 18px;
+}
+
+.page-footer .socialLinks {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.page-footer .socialLinks a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.page-footer .socialLinks a:hover {
+    color: #b7a57a;
+}
+
+.page-footer .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.page-footer h1 {
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+
+.page-footer .cpSymbol {
+    color: black;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 500px) {
     .page-footer {
         height: 32px;
         z-index: -1;
-
-        .git {
-            visibility: hidden;
-        }
-        :first-child {
-            margin-left: -5px;
-        }
-
-        a {
-            font-size: 15px;
-            visibility: hidden;
-        }
-
-        h1 {
-            font-size: 10px;
-            line-height: 27px;
-            padding-right: 5px;
-        }
-
-        svg {
-            font-size: 8px;
-            padding-top: 16px;
-            padding-right: 5px;
-        }
+        padding: 0 10px;
+    }
+    
+    .page-footer .socialText,
+    .page-footer .socialLinks a {
+        font-size: 15px;
+        visibility: hidden;
+    }
+    
+    .page-footer h1 {
+        font-size: 10px;
+    }
+    
+    .page-footer .cpSymbol {
+        font-size: 8px;
     }
 }
