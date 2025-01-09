@@ -10,6 +10,7 @@ import About from './routes/About.js';
 import Contact from './routes/Contact.js'
 import UMarket from './routes/UMarket.js'
 import UWealth from './routes/UWealth.js'
+import JoinUs from './routes/JoinUs.js';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/projects/UMarket" element={<UMarket />} />
       <Route path="/events" element={<Events />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/joinus" element={<JoinUs />} />
    </Routes>
    </>
   );

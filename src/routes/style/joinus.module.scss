@@ -1,0 +1,152 @@
+.container {
+    min-height: calc(100vh - 80px);
+    background-color: #4b2e83;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    p {
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+        color: #b7a57a;
+    }
+}
+
+.cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #b7a57a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: darken(#b7a57a, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+.benefits {
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+}
+
+.benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefitCard {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+    
+    .icon {
+        font-size: 2.5rem;
+        color: #b7a57a;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        color: #e0e0e0;
+        line-height: 1.6;
+    }
+}
+
+.getStarted {
+    padding: 60px 20px;
+    text-align: center;
+    
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.step {
+    .stepNumber {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #b7a57a;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        color: #e0e0e0;
+    }
+}
+
+.action {
+    margin-top: 40px;
+    
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #b7a57a;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+}

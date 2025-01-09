@@ -24,7 +24,7 @@ const NavBar = () => {
                 <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                     Contact
                 </NavLink>           
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/joinus">
                     Join us
                 </NavLink>
             </nav>

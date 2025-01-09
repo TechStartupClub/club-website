@@ -22,9 +22,6 @@ const Footer = () => {
                     <a href="https://discord.gg/SPJnwq5hPk" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faDiscord} />
                     </a>
-                    <a href="https://uwtechstartupclub.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faGlobe} />
-                    </a>
                 </div>
             </div>
             <div className="right-section">
