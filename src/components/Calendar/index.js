@@ -49,7 +49,7 @@ const Calendar = () => {
                 {daysOfMonth.map((days, daysIndex) => {
                     if (days.hasSame(today, "day")) {
                         return (
-                            <div style={{backgroundColor: '#b7a57a'}} key={daysIndex}>
+                            <div className="current-day" key={daysIndex}>
                                 {days.day}
                                 <p>Current</p>
                             </div>
@@ -57,7 +57,7 @@ const Calendar = () => {
                     }
                     else if (days.hasSame(today, "day") && ((days.weekday === 1) || (days.weekday === 4))) {
                         return (
-                            <div style={{backgroundColor: '#b7a57a'}} key={daysIndex}>
+                            <div className="current-day class-day" key={daysIndex}>
                                 {days.day}
                                 <p>
                                     {days.weekday === 1 ? 'TPS 201 12:30-1:30' : 'DOU 260 12:30-1:30'}
@@ -69,9 +69,8 @@ const Calendar = () => {
                         );
                     }  
                     else if ((days.weekday === 1) || (days.weekday === 4)) {
-
                         return (
-                            <div style={{backgroundColor: '#b7a57a'}} key={daysIndex}>
+                            <div className="class-day" key={daysIndex}>
                                 {days.day}
                                 <p>
                                     {days.weekday === 1 ? 'TPS 201 12:30-1:30' : 'DOU 260 12:30-1:30'}

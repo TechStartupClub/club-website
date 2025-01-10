@@ -28,7 +28,7 @@ const Home = () => {
                     
                     <h1>TECH STARTUP CLUB</h1>
                     <h2>Full-Stack development at the University of Washington</h2>
-                    <Link to="/contact" className={style.flatButton}>Join us</Link>
+                    <Link to="/joinus" className={style.flatButton}>Join us</Link>
                 </div>
             </div>
             <Footer />

@@ -23,7 +23,7 @@
 .contact-form {
     width: 100%;
     background-color: white; // Added white background
-    padding: 30px 50px; // Set explicit horizontal padding
+    padding: 30px 0; // Set explicit horizontal padding
     border-radius: 8px;      // Added rounded corners
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Added subtle shadow
     display: flex;           // Added
@@ -55,7 +55,6 @@
     input[type='email'],
     textarea {
         width: 100%;
-        // margin: auto;
         padding: 10px 6px;
         background: #f5f5f5; // Changed to light gray background
         border: 1px solid #ddd; // Added subtle border
@@ -64,7 +63,7 @@
         color: black; // Changed to black text
         
         &:focus {
-            outline: 2px solid #b7a57a;
+            outline: 2px solid orange;
             background: white; // White background when focused
         }
     }
@@ -76,8 +75,8 @@
     
     .flat-button {
         background: transparent;
-        color: #b7a57a;
-        border: 2px solid #b7a57a;
+        color: #32006e;
+        border: 2px solid #32006e;
         padding: 10px 25px;
         font-size: 1rem;
         letter-spacing: 2px;
@@ -87,7 +86,7 @@
         float: right;
         
         &:hover {
-            background: #b7a57a;
+            background: orange;
             color: white;
         }
     }
