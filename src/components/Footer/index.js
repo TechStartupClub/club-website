@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faCopyright, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faCopyright, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
 
 const Footer = () => {
@@ -21,6 +21,9 @@ const Footer = () => {
                     </a>
                     <a href="https://discord.gg/SPJnwq5hPk" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faDiscord} />
+                    </a>
+                    <a href="mailto:techstartup@uw.edu" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                 </div>
             </div>

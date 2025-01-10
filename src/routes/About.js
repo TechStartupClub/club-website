@@ -133,7 +133,7 @@ const teamMembers = [
         socials: {
             email: '',
             linkedin: '',
-            github: ''
+            github: 'https://github.com/ASTN-NGYN'
         }
     },
     { 
@@ -144,6 +144,26 @@ const teamMembers = [
             email: 'lwillis@uw.edu',
             linkedin: 'https://www.linkedin.com/in/luke-willis-b26b00282/',
             github: 'https://github.com/luke-willis'
+        }
+    },
+    { 
+        name: 'James Escudero', 
+        img: Orange, 
+        description: 'Back-end Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: ''
+        }
+    },
+    { 
+        name: 'Renzo', 
+        img: Orange, 
+        description: 'Back-end Developer',
+        socials: {
+            email: 'aquinren@uw.edu',
+            linkedin: '',
+            github: 'https://github.com/uwRenRen'
         }
     }
 ];
