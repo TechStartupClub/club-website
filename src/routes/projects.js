@@ -5,10 +5,8 @@ import Footer from '../components/Footer';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import ClubWebsite from '../assets/images/ClubWebsite/Screenshot 2025-01-09 at 8.35.34 AM.png';
-import UMarket from '../assets/images/UMarket/images/UMarket.PNG';
+import ClubWebsiteDemo from '../assets/images/ClubWebsite/videos/ClubWebsite demo.mov';
 import UMarketDemo from '../assets/images/UMarket/videos/UMarket demo.mov';
-import UWealth from '../assets/images/UWealth/images/Front page.png';
 import UWealthDemo from '../assets/images/UWealth/Videos/UWealth video.mp4';
 
 const projects = [
@@ -28,7 +26,7 @@ const projects = [
     },
     {
         name: 'Club Website 2024',
-        image: ClubWebsite,
+        video: ClubWebsiteDemo,
         description: 'The official Tech Startup Club website built with React, JavaScript, HTML, CSS.',
         github: 'https://github.com/TechStartupClub/club-website',
         route: '/'
