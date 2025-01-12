@@ -7,6 +7,8 @@
     justify-content: center;
     text-align: center;
     color: black;
+    margin-top: 95px; // Added to account for fixed navbar height
+
 }
 
 .graphicHeader2 {
@@ -42,7 +44,7 @@
 
     h2 {
         color: black;
-        font-size: 15px;
+        font-size: 1vw;
         margin: 0;
         font-family: 'Verdana';
         font-weight: 400;
@@ -184,31 +186,90 @@
     }
 }
 
-// @media screen and (max-width: 500px) {
-//     .headerContent {
-//         h1 {
-//             font-size: 8vw;
-//         }
-//     }
-
-//     .flatButton {
-//         font-size: 17px;
-//     }
-// }
-
-// @media screen and (min-width: 1400px) {
-//     .headerContent {
-//         h1 {
-//             font-size: 110px;
-//         }
-//     }
-// }
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerContent {
+        h2 {
+            font-size: 2vw;
+        }
+    }
+
+    .topRightOrange1 {
+        top: -10px;
+        right: -10px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .topRightOrange2 {
+        top: 15px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .topRightOrange3 {
+        top: 0px;
+        right: 55px;
+        width: 37px;
+        height: 37px;
+    }
+    
+    .topRightOrange4 {
+        top: 35px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .topRightOrange5 {
+        top: 30px;
+        right: 50px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    // Bottom Left Corner Cluster
+    .bottomLeftOrange1 {
+        bottom: -10px;
+        left: -10px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .bottomLeftOrange2 {
+        bottom: 15px;
+        left: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .bottomLeftOrange3 {
+        bottom: 0px;
+        left: 55px;
+        width: 37px;
+        height: 37px;
+    }
+    
+    .bottomLeftOrange4 {
+        bottom: 35px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .bottomLeftOrange5 {
+        bottom: 30px;
+        left: 50px;
+        width: 32px;
+        height: 32px;
     }
 }
