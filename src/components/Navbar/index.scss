@@ -51,7 +51,6 @@
         transition: all 0.3s ease;
 
         &:hover {
-            // color: #fcc765;
             color: black;
         }
     }
@@ -60,6 +59,7 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+        background-color: rgba(255, 255, 255, 0.98);
 
         .nav-link {
             font-size: 20px;

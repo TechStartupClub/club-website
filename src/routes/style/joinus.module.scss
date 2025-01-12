@@ -6,6 +6,8 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    margin-top: 95px; // Added to account for fixed navbar height
+
 }
 
 .hero {
