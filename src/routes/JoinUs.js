@@ -3,7 +3,7 @@ import style from './style/joinus.module.scss';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket, faUsers, faLaptopCode, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faRocket, faUsers, faLaptopCode, faHandshake, faBriefcase, faUserTie } from '@fortawesome/free-solid-svg-icons';
 
 const JoinUs = () => {
     return (
@@ -11,59 +11,71 @@ const JoinUs = () => {
             <NavBar />
             <div className={style.container}>
                 <section className={style.hero}>
-                    <h1>Join Tech Startup Club</h1>
-                    <p>Be part of UW's most innovative community of future entrepreneurs and tech leaders</p>
-                    <a href="https://discord.gg/SPJnwq5hPk" target="_blank" rel="noopener noreferrer" className={style.cta}>
-                        Join Our Discord
-                    </a>
+                    <div className={style.content}>
+                        <h1>Build Real-World Tech Projects</h1>
+                        <p>Join UW's hub for building production-grade applications with React, Node.js, Python, AWS, and more. Gain the exact skills that tech companies are hiring for.</p>
+                        <a href="https://discord.gg/SPJnwq5hPk" target="_blank" rel="noopener noreferrer" className={style.cta}>
+                            Join Our Community
+                        </a>
+                    </div>
                 </section>
 
                 <section className={style.benefits}>
-                    <h2>Why Join Us?</h2>
+                    <h2>Why You'll Love Being Here</h2>
                     <div className={style.benefitsGrid}>
                         <div className={style.benefitCard}>
                             <FontAwesomeIcon icon={faRocket} className={style.icon} />
-                            <h3>Launch Your Ideas</h3>
-                            <p>Turn your innovative concepts into real startups with guidance from experienced mentors</p>
+                            <h3>Build Full-Stack Apps</h3>
+                            <p>Create production-ready applications using React, TypeScript, Node.js, PostgreSQL, and AWS. Deploy with Docker and CI/CD pipelines.</p>
                         </div>
                         <div className={style.benefitCard}>
                             <FontAwesomeIcon icon={faUsers} className={style.icon} />
-                            <h3>Network</h3>
-                            <p>Connect with like-minded students, industry professionals, and potential co-founders</p>
+                            <h3>Master Modern Tech</h3>
+                            <p>Learn industry tools like Git, Agile/Scrum, testing (Jest, Pytest), and cloud services (AWS, GCP). Build your GitHub portfolio.</p>
                         </div>
                         <div className={style.benefitCard}>
                             <FontAwesomeIcon icon={faLaptopCode} className={style.icon} />
-                            <h3>Learn & Grow</h3>
-                            <p>Gain practical skills in entrepreneurship, technology, and business development</p>
+                            <h3>Build ML & AI Apps</h3>
+                            <p>Create projects with Python, TensorFlow, PyTorch, and ChatGPT API. Work on computer vision, NLP, and generative AI applications.</p>
                         </div>
                         <div className={style.benefitCard}>
                             <FontAwesomeIcon icon={faHandshake} className={style.icon} />
-                            <h3>Collaborate</h3>
-                            <p>Work on exciting projects and participate in hackathons and startup competitions</p>
+                            <h3>Mobile & Web Apps</h3>
+                            <p>Develop cross-platform apps using React Native, Flutter, and progressive web apps (PWAs). Learn UI/UX with modern CSS frameworks.</p>
+                        </div>
+                        <div className={style.benefitCard}>
+                            <FontAwesomeIcon icon={faBriefcase} className={style.icon} />
+                            <h3>Industry-Standard Projects</h3>
+                            <p>Build the same tech that companies use: microservices architecture, RESTful APIs, OAuth authentication, scalable databases, and enterprise-grade security practices.</p>
+                        </div>
+                        <div className={style.benefitCard}>
+                            <FontAwesomeIcon icon={faUserTie} className={style.icon} />
+                            <h3>Work Like a Tech Company</h3>
+                            <p>Join specialized teams with dedicated roles: Frontend, Backend, DevOps, UI/UX, and Product Management. Experience real Agile workflows with standups and sprints.</p>
                         </div>
                     </div>
                 </section>
 
                 <section className={style.getStarted}>
-                    <h2>How to Get Started</h2>
+                    <h2>Launch Your Tech Career Today</h2>
                     <div className={style.steps}>
                         <div className={style.step}>
                             <span className={style.stepNumber}>1</span>
-                            <p>Join our Discord community</p>
+                            <p>Join our active Discord for project teams & tech discussions</p>
                         </div>
                         <div className={style.step}>
                             <span className={style.stepNumber}>2</span>
-                            <p>Attend our next meeting</p>
+                            <p>Choose a project track: Web, Mobile, AI/ML, or Cloud</p>
                         </div>
                         <div className={style.step}>
                             <span className={style.stepNumber}>3</span>
-                            <p>Get involved in projects</p>
+                            <p>Build your portfolio with industry-standard projects</p>
                         </div>
                     </div>
                     <div className={style.action}>
-                        <p>Ready to begin your entrepreneurial journey?</p>
+                        <p>Ready to build production-grade applications?</p>
                         <a href="https://discord.gg/SPJnwq5hPk" target="_blank" rel="noopener noreferrer" className={style.cta}>
-                            Join Now
+                            Join Us Now
                         </a>
                     </div>
                 </section>
