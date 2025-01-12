@@ -23,39 +23,41 @@ const Contact = () => {
     };
 
     return (
-        <>
+        <div className={style.layoutWrapper}>
             <NavBar />
-            <div className={style['contact-page']}>
-                <div className={style['text-zone']}>
-                    <h1>Contact Us For More Info!</h1>
-                    <div className={style['contact-form']}>
-                        <form ref={refForm} onSubmit={sendEmail}>
-                            <ul>
-                                <li className={style.half}>
-                                    <input type='text' name='name' placeholder='Name' required />
-                                </li>
-                                <li className={style.half}>
-                                    <input type='email' name='email' placeholder='Email' required />
-                                </li>
-                                <li>
-                                    <input type='text' name='subject' placeholder='Subject' required />
-                                </li>
-                                <li>
-                                    <textarea placeholder="Message" name="message" required />
-                                </li>
-                                <li>
-                                    <input type="submit" className={style['flat-button']} value="SEND" />
-                                </li>
-                            </ul>
-                        </form>
+            <div className={style.container}>
+                <div className={style['contact-page']}>
+                    <div className={style['text-zone']}>
+                        <h1>Contact Us For More Info!</h1>
+                        <div className={style['contact-form']}>
+                            <form ref={refForm} onSubmit={sendEmail}>
+                                <ul>
+                                    <li className={style.half}>
+                                        <input type='text' name='name' placeholder='Name' required />
+                                    </li>
+                                    <li className={style.half}>
+                                        <input type='email' name='email' placeholder='Email' required />
+                                    </li>
+                                    <li>
+                                        <input type='text' name='subject' placeholder='Subject' required />
+                                    </li>
+                                    <li>
+                                        <textarea placeholder="Message" name="message" required />
+                                    </li>
+                                    <li>
+                                        <input type="submit" className={style['flat-button']} value="SEND" />
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
                     </div>
-                </div>
-                <div className={style['about-img']}>
-                    <img className={style['mainLogo']} src={mainLogo} alt="Tech Startup Club Logo" />
+                    <div className={style['about-img']}>
+                        <img className={style.mainLogo} src={mainLogo} alt="Tech Startup Club Logo" />
+                    </div>
                 </div>
             </div>
             <Footer />
-        </>
+        </div>
     );
 };
 
