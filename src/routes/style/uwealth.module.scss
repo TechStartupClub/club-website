@@ -12,19 +12,21 @@
     flex-direction: column;
     gap: 0;
     width: 100%;
+    margin-top: 95px; // Added margin-top for navbar
 }
 
+// Rest of the styles remain exactly the same
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0; // Remove horizontal padding
+    padding: 100px 0;
     width: 100%;
     position: relative;
 
     img {
         width: 80%;
-        max-width: 1200px; // Prevent excessive width on large screens
+        max-width: 1200px;
         height: auto;
         border-radius: 12px;
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
@@ -50,7 +52,7 @@
 
 .infoBox, .textContent {
     width: 80%;
-    max-width: 1200px; // Match image max-width
+    max-width: 1200px;
     margin: 0 auto;
     text-align: left;
 }
@@ -73,7 +75,7 @@
 
 .videoBox {
     width: 80%;
-    max-width: 1200px; // Match other elements
+    max-width: 1200px;
     margin: 30px auto 0;
     
     video {
@@ -101,6 +103,10 @@
 }
 
 @media (max-width: 768px) {
+    .mainContent {
+        margin-top: 95px; // Maintain the same top margin on mobile
+    }
+
     .section {
         padding: 40px 20px;
 

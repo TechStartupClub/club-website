@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-top: 95px; // Added to account for fixed navbar height
 }
 
 .calendarContainer {
@@ -19,4 +20,14 @@
     padding: 40px;
     width: 90%;
     max-width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        padding: 15px;
+    }
+    
+    .calendarContainer {
+        padding: 20px;
+    }
 }

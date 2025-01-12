@@ -8,12 +8,13 @@
     flex: 1;
     width: 100%;
     max-width: 1400px;
-    margin: auto;
+    margin: 95px auto 0; // Added margin-top for navbar
     padding: 20px;
     display: flex;
     align-items: center;
 }
 
+// Rest of the styles remain exactly the same
 .contact-page {
     display: flex;
     align-items: center;
@@ -115,6 +116,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        margin-top: 95px; // Maintain the same top margin on mobile
+    }
+    
     .contact-page {
         flex-direction: column;
         padding: 20px;
