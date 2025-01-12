@@ -2,30 +2,62 @@ import React from 'react';
 import style from './style/blog.module.scss';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Card from '../components/Card'
+import mainLogo from '../assets/logos/Tech Startup Club Logo.png';
 
-import mainLogo from '../assets/logos/Tech Startup Club Logo.png'
-
+const BlogCard = ({ imgSrc, imgAlt, title, description, btnText, link }) => (
+    <div className={style.blogCard}>
+        <div className={style.imageContainer}>
+            <img src={imgSrc} alt={imgAlt} />
+        </div>
+        <div className={style.content}>
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <a href={link} target="_blank" rel="noopener noreferrer" className={style.button}>
+                {btnText}
+            </a>
+        </div>
+    </div>
+);
 
 const Blog = () => {
+    const posts = [
+        {
+            imgSrc: mainLogo,
+            imgAlt: 'Event picture',
+            title: "First Official Meeting 9/25 Lunch Period!",
+            description: "Join us for our inaugural All-Staff Meeting at the Mattress Factory during lunch! Meet the team, learn about our upcoming projects, and see how you can be part of building amazing tech.",
+            btnText: "Join Discord",
+            link: "https://discord.gg/dkWsu9a4"
+        },
+        {
+            imgSrc: mainLogo,
+            imgAlt: 'Event picture',
+            title: "First Project Launch 10/7!",
+            description: "Be part of our first full-stack project! Whether you're into frontend (React/TypeScript), backend (Node.js), or DevOps (AWS/Docker), there's a perfect role for you. Great for your portfolio!",
+            btnText: "Get Involved",
+            link: "https://discord.gg/dkWsu9a4"
+        }
+    ];
 
     return (
-        <>
+        <div className={style.layoutWrapper}>
             <NavBar />
-            <div className="conatiner blog-page">
-                <div className="text-zone">
-                    <h1>
-                        Recent Activities of The Club!
-                    </h1>
-                </div>
-                <div className="blog-container">
-                    <Card  imgSrc={mainLogo} imgAlt='Event picture' title="First Official Meeting 9/25 Lunch Period!" description="First All-Staff Meeting for the club in the Mattress Factory during lunch period. Come join us to see what the club is about and meet us!" btnText="Learn More" link="https://discord.gg/dkWsu9a4"/>
-                    <Card  imgSrc={mainLogo} imgAlt='Event picture' title="First Project 10/7!" description="We will be deciding our first club project by October 7th. It will be a full-stack application with the work being divided by roles on our discord server. All levels, roles, and people are welcome to join us and help develop this project to put on your resume!" btnText="Learn More" link="https://discord.gg/dkWsu9a4"/>
+            <div className={style.container}>
+                <header className={style.header}>
+                    <div className={style.content}>
+                        <h1>Tech Startup Club News & Events</h1>
+                        <p>Stay updated with our latest projects, meetings, and opportunities to build industry-standard applications.</p>
+                    </div>
+                </header>
+                <div className={style.blogGrid}>
+                    {posts.map((post, index) => (
+                        <BlogCard key={index} {...post} />
+                    ))}
                 </div>
             </div>
             <Footer />
-        </>
-    )
-}
+        </div>
+    );
+};
 
-export default Blog
+export default Blog;
