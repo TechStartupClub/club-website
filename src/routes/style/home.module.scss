@@ -1,39 +1,36 @@
-.layoutWrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.container {
-    flex: 1;
+.graphicHeader {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    text-align: center;
+    color: black;
 }
 
-// .container {
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     padding: 20px;
-// }
+.graphicHeader2 {
+    background-color: orange;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
-.homeSection {
-    text-align: center;
+.headerContent {
+    width: 75%;
+    margin: 0;
     padding: 40px;
-    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-    width: 90%;
-    overflow: visible;
-
+    
     h1 {
         color: black;
-        font-size: 8vw;
+        font-size: 6vw;
         margin: 0;
         width: 100%;
         font-family: 'Verdana';
@@ -53,6 +50,14 @@
         position: relative;
         z-index: 2;
     }
+}
+
+.slideshowContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // Top Right Corner Cluster
@@ -179,27 +184,25 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .homeSection {
-        width: 95%;
+// @media screen and (max-width: 500px) {
+//     .headerContent {
+//         h1 {
+//             font-size: 8vw;
+//         }
+//     }
 
-        h1 {
-            font-size: 11vw;
-        }
-    }
+//     .flatButton {
+//         font-size: 17px;
+//     }
+// }
 
-    .flatButton {
-        font-size: 17px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .homeSection {
-        h1 {
-            font-size: 130px;
-        }
-    }
-}
+// @media screen and (min-width: 1400px) {
+//     .headerContent {
+//         h1 {
+//             font-size: 110px;
+//         }
+//     }
+// }
 
 @keyframes fadeIn {
     0% {

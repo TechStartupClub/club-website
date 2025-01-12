@@ -162,7 +162,7 @@ const teamMembers = [
         description: 'Back-end Developer',
         socials: {
             email: 'aquinren@uw.edu',
-            linkedin: '',
+            linkedin: 'https://www.linkedin.com/in/renzoserg-aquino-782744340/',
             github: 'https://github.com/uwRenRen'
         }
     }
