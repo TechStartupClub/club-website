@@ -12,7 +12,7 @@
 
     &.scrolled {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        background: rgba(255, 255, 255, 0.98);
+        background: linear-gradient(135deg, #fcc765 0%, #ffa41b 100%);
     }
 
     .nav-content {
@@ -142,7 +142,7 @@
             visibility: hidden;
             transition: all 0.3s ease;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.98);
+            background: linear-gradient(135deg, #fcc765 0%, #ffa41b 100%);
 
             &.open {
                 transform: translateY(0);
@@ -161,7 +161,7 @@
                 }
 
                 &:hover {
-                    background: #f5f5f5;
+                    background: #fcc765;
                 }
 
                 &.active {

@@ -1,3 +1,4 @@
+// Projects.jsx
 import React from 'react';
 import style from './style/projects.module.scss';
 import NavBar from '../components/Navbar';
@@ -32,7 +33,6 @@ const projects = [
         route: '/'
     }
 ];
-
 
 const ProjectCard = ({ project }) => {
     return (
@@ -72,9 +72,14 @@ const Projects = () => {
     return (
         <div className={style.layoutWrapper}>
             <NavBar />
-            <div className={style.container}>
+            <div className={style.mainContent}>
+                <section className={style.header}>
+                    <div className={style.content}>
+                        <h1>Our Projects</h1>
+                        <p>Industry-standard applications built with modern tech stacks</p>
+                    </div>
+                </section>
                 <div className={style.projectsSection}>
-                    <h1>Our Projects</h1>
                     <div className={style.projectsGrid}>
                         {projects.map((project, index) => (
                             <ProjectCard key={index} project={project} />
