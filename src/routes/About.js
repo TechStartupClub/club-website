@@ -225,8 +225,8 @@ const About = () => {
     return (
         <div className={style.layoutWrapper}>
             <NavBar />
-            <div className={style.container}>
-                <div className={style.aboutSection}>
+            <section className={style.header}>
+                <div className={style.content}>
                     <h1>About Us</h1>
                     <p>
                         We are a group of students at the University of Washington Tacoma, passionate about combining techonology and finance to create impactful solutions. 
@@ -234,9 +234,10 @@ const About = () => {
                         and educational resources for smarter investing. With diverse backgrounds in coding, finance, and user experience design, we aim to create an intuitive 
                         and accessible platform that meets the needs of modern investors. At UW, we are proud to foster innovation and collaboration, turning ideas into tools 
                         that make a difference.
-                    </p>
+                    </p>                    
                 </div>
-
+            </section>
+            <div className={style.container}>
                 <section className={style.teamSection}>
                     <h1>Our Team</h1>
                     <div className={style.teamGrid}>
