@@ -157,13 +157,23 @@ const teamMembers = [
         }
     },
     { 
-        name: 'Renzo', 
+        name: 'Renzoserg Aquino', 
         img: Orange, 
         description: 'Back-end Developer',
         socials: {
             email: 'aquinren@uw.edu',
             linkedin: 'https://www.linkedin.com/in/renzoserg-aquino-782744340/',
             github: 'https://github.com/uwRenRen'
+        }
+    },
+    { 
+        name: 'Shanto', 
+        img: Orange, 
+        description: 'Front-end Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: ''
         }
     }
 ];
