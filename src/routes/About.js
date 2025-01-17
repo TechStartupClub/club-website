@@ -175,6 +175,26 @@ const teamMembers = [
             linkedin: '',
             github: ''
         }
+    },
+    { 
+        name: 'Aquib', 
+        img: Orange, 
+        description: 'Mobile Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: ''
+        }
+    },
+    { 
+        name: 'Matthew', 
+        img: Orange, 
+        description: 'Mobile Developer',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: ''
+        }
     }
 ];
 
