@@ -11,6 +11,12 @@ const UMarket = () => {
             <div className={style.layoutWrapper}>
             <NavBar />
             <div className={style.mainContent}>
+                <section className={style.header}>
+                    <div className={style.content}>
+                        <h1>UMarket</h1>
+                        <p>Social Media Marketplace website and mobile app.</p>
+                    </div>
+                </section>
                 <div className={style.videoBox}>
                     <video autoPlay muted loop playsInline>
                         <source src={UMarketVideo} type="video/mp4" />
