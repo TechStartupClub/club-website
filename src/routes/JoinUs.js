@@ -4,6 +4,8 @@ import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faUsers, faLaptopCode, faHandshake, faBriefcase, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import DiscordInvite from '../assets/images/Discord Invite.png';
+
 
 const JoinUs = () => {
     return (
@@ -36,6 +38,7 @@ const JoinUs = () => {
                         <div className={style.benefitCard}>
                             <FontAwesomeIcon icon={faLaptopCode} className={style.icon} />
                             <h3>Build ML & AI Apps</h3>
+                            <h3>Spring 25</h3>
                             <p>Create projects with Python, TensorFlow, PyTorch, and ChatGPT API. Work on computer vision, NLP, and generative AI applications.</p>
                         </div>
                         <div className={style.benefitCard}>
@@ -77,8 +80,15 @@ const JoinUs = () => {
                         <a href="https://discord.gg/SPJnwq5hPk" target="_blank" rel="noopener noreferrer" className={style.cta}>
                             Join Us Now
                         </a>
+
                     </div>
                 </section>
+                <div className={style.discordSection}>
+                    <div className={style.discordTitle}>Join Our Discord</div>
+                    <div className={style.discordContainer}>
+                        <img src={DiscordInvite} alt="Join our Discord community" className={style.discordImage} />
+                    </div>
+                </div>
             </div>
             <Footer />
         </>
