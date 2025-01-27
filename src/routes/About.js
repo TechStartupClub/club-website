@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
+import charles from '../assets/images/Profile-Photos/charles bryan.jpg';
 import celestin from '../assets/images/Profile-Photos/celestin.jpeg';
 import jacobKlymenko from '../assets/images/Profile-Photos/jacobKylmenko.jpeg';
 import nickJordan from '../assets/images/Profile-Photos/nickJordan.jpeg';
@@ -16,6 +17,16 @@ import johnDiego from '../assets/images/Profile-Photos/johnDiego.jpeg';
 import Orange from '../assets/images/Orange Pin.png';
 
 const teamMembers = [
+    { 
+        name: 'Charles Bryan, M.S.', 
+        img: charles, 
+        description: 'Full-stack Professor',
+        socials: {
+            email: '',
+            linkedin: '',
+            github: ''
+        }
+    },
     { 
         name: 'Celestin Ryf', 
         img: celestin, 
@@ -252,6 +263,11 @@ const TeamCard = ({ member }) => {
 };
 
 const About = () => {
+    // Separate faculty advisor
+    const facultyAdvisor = teamMembers[0];
+    // Rest of team members
+    const students = teamMembers.slice(1);
+
     return (
         <div className={style.layoutWrapper}>
             <NavBar />
@@ -268,10 +284,16 @@ const About = () => {
                 </div>
             </section>
             <div className={style.container}>
+                <section className={style.facultySection}>
+                    <h1>Faculty Advisor</h1>
+                    <div className={style.facultyWrapper}>
+                        <TeamCard member={facultyAdvisor} />
+                    </div>
+                </section>
                 <section className={style.teamSection}>
                     <h1>Our Team</h1>
                     <div className={style.teamGrid}>
-                        {teamMembers.map((member, index) => (
+                        {students.map((member, index) => (
                             <TeamCard key={index} member={member} />
                         ))}
                     </div>

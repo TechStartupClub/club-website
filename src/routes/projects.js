@@ -35,6 +35,12 @@ const projects = [
 ];
 
 const ProjectCard = ({ project }) => {
+    const techStacks = {
+        'UMarket 2025': ['React', 'TypeScript', 'Node.js', 'Express', 'Python', 'AWS', 'PostgreSQL'],
+        'UWealth 2024': ['React', 'JavaScript', 'Node.js', 'Express', 'PostgreSQL'],
+        'Club Website 2024': ['React', 'JavaScript', 'HTML', 'CSS']
+    };
+
     return (
         <div className={style.projectCard}>
             <Link to={project.route} className={style.cardContent}>
@@ -53,15 +59,24 @@ const ProjectCard = ({ project }) => {
                 <div className={style.projectInfo}>
                     <h2>{project.name}</h2>
                     <p>{project.description}</p>
-                    <a 
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={style.githubLink}
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <FaGithub /> View on GitHub
-                    </a>
+                    <div className={style.techSection}>
+                        <div className={style.techStack}>
+                            {techStacks[project.name]?.map((tech, index) => (
+                                <span key={index} className={style.techBadge}>
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <a 
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={style.githubLink}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <FaGithub /> View on GitHub
+                        </a>
+                    </div>
                 </div>
             </Link>
         </div>
