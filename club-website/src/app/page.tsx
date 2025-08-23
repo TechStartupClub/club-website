@@ -2,7 +2,21 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import primo from '../../assets/primo.jpeg';
+import cel from '../../assets/cel.jpeg';
+import nick from '../../assets/nick.jpeg';
+import jacob from '../../assets/jacob.jpeg';
+import q from '../../assets/q.jpeg';
+import codeninjas from '../../assets/codeninjas.jpg';
 import { Rocket, Target, Briefcase, Users, Trophy, Globe } from 'lucide-react';
+
+const PROFILE_IMAGES = {
+  primo: primo.src,
+  cel: cel.src,
+  nick: nick.src,
+  jacob: jacob.src,
+  q: q.src,
+};
 
 interface SuccessStory {
   id: string;
@@ -30,33 +44,35 @@ const TechStartupClubLanding = () => {
   const [isPlaying, setIsPlaying] = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
+
+
   const successStories: SuccessStory[][] = [
     [
       {
         id: '1',
         name: 'Quienten Miller',
-        company: 'Meta',
+        company: 'Stoke Space',
         role: 'SWE @ Stoke Space',
-        imageUrl: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        testimonial: 'The client projects I worked on here directly led to my Meta internship. Having real production code to show in interviews was a game-changer.',
+        imageUrl: PROFILE_IMAGES.q,
+        testimonial: 'Being able to get real experience while on my job search post graduation is one of the biggest reasons I was able to land my full-time role.',
         initials: 'SJ'
       },
       {
         id: '2',
         name: 'Jacob Klymenko',
-        company: 'Stripe',
+        company: 'Junt Industries',
         role: 'SWE @ Junt Industries',
-        imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        testimonial: 'Leading a team on the UW project taught me product management skills that got me noticed by Stripe recruiters.',
+        imageUrl: PROFILE_IMAGES.jacob,
+        testimonial: 'Leading the Backend team for 2 quarters helped me develop my leadership skills, but also learn and practice new languages, frameworks, and other tools.',
         initials: 'MK'
       },
       {
         id: '3',
         name: 'Celestin Ryf',
-        company: 'SWE @ Insights Emerge',
-        role: 'Full-Stack Dev @ Airbnb',
-        imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        testimonial: 'From club member to Airbnb engineer in 8 months. The professional development here is unmatched.',
+        company: 'Insights Emerge',
+        role: 'SWE @ Insights Emerge',
+        imageUrl: PROFILE_IMAGES.cel,
+        testimonial: 'Having this experience has helped me strengthen my resume to the point that recruiters now message me directly for positions.',
         initials: 'AL'
       }
     ],
@@ -64,42 +80,22 @@ const TechStartupClubLanding = () => {
       {
         id: '4',
         name: 'Nicholas Jordan',
-        company: 'SWE @ Insights Emerge',
-        role: 'UX Designer @ Google',
-        imageUrl: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        testimonial: 'Working on real user problems with actual stakeholders prepared me perfectly for my Google UX internship.',
+        company: 'Expedia',
+        role: 'Expedia Discovery Group',
+        imageUrl: PROFILE_IMAGES.nick,
+        testimonial: 'Its easy to use the club as a talking point in any interview or screening, recruiters love it!',
         initials: 'ER'
       },
       {
         id: '5',
         name: 'Primitivo Bambao',
-        company: 'Netflix',
-        role: 'Data Scientist @ Netflix',
-        imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        testimonial: 'The analytics work I did for club clients became the centerpiece of my Netflix interview presentation.',
+        company: '321Buddy',
+        role: 'Lead Designer @ 321Buddy',
+        imageUrl: PROFILE_IMAGES.primo,
+        testimonial: 'The opportunities that have come from the projects Ive built here are outstanding, from small companies to non-profits.',
         initials: 'DT'
-      },
-      {
-        id: '6',
-        name: 'Jessica Smith',
-        company: 'Uber',
-        role: 'Backend Engineer @ Uber',
-        imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-        testimonial: 'Managing production deployments for real clients gave me confidence that set me apart from other candidates.',
-        initials: 'JS'
       }
     ]
-  ];
-
-  const sponsors: Sponsor[] = [
-    { id: '1', name: 'Microsoft', logoUrl: 'https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png' },
-    { id: '2', name: 'Amazon', logoUrl: 'https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png' },
-    { id: '3', name: 'Google', logoUrl: 'https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png' },
-    { id: '4', name: 'Meta', logoUrl: 'https://logos-world.net/wp-content/uploads/2020/05/Facebook-Logo.png' },
-    { id: '5', name: 'Stripe', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/Stripe-Logo.png' },
-    { id: '6', name: 'Airbnb', logoUrl: 'https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo.png' },
-    { id: '7', name: 'Netflix', logoUrl: 'https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo.png' },
-    { id: '8', name: 'Uber', logoUrl: 'https://logos-world.net/wp-content/uploads/2020/05/Uber-Logo.png' }
   ];
 
   const features = [
