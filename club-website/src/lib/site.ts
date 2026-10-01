@@ -58,6 +58,7 @@ export const MEMBER_COMPANIES = [
     'Expedia',
     'Amazon',
     'LTM',
+    'Adobe',
   ]),
 ];
 
