@@ -1,9 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
-  images: {
-    domains: ["images.unsplash.com", "logos-world.net"],
-  },
-} satisfies NextConfig;
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
