@@ -9,8 +9,7 @@ const Hero = ({ memberCount }: { memberCount: number | null }) => (
   <section id="top" className="relative overflow-hidden border-b-2 border-ink">
     <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[1.25fr_1fr] lg:gap-8 lg:py-28">
       <div className="animate-rise">
-        <p className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-ink bg-peach px-4 py-1.5 font-mono text-xs uppercase tracking-widest">
-          <span className="h-2 w-2 rounded-full bg-leaf" />
+        <p className="mb-6 inline-block rounded-full border-2 border-ink bg-peach px-4 py-1.5 font-mono text-xs uppercase tracking-widest">
           Student club · UW Tacoma
         </p>
 
